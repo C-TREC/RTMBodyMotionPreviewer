@@ -7,14 +7,13 @@ RTMBodyMotion 動揺プレビューア / RTMBodyMotion Previewer
 ------------
 不用進遊戲，就能預覽 RTMBodyMotion.js 的車體晃動並調校參數。
 預覽器直接執行 RTMBodyMotion.js 的原始碼（以 RTM 2.4.x／1.12.2 的介面模擬遊戲環境，載入順序與 20 tick/s
-更新都和遊戲相同），所以看到的晃動就是遊戲內的結果；已與遊戲的腳本引擎 Nashorn 逐幀比對，數值一致。
+更新都和遊戲相同），所以看到的晃動就是遊戲內的結果。
 
 ゲームに入らずにRTMBodyMotion.jsの車体動揺をプレビューし、パラメータを調整できます。モジュールの原コードを
-そのまま実行するため、ゲーム内と同じ結果になります（Nashornと全フレーム照合済み）。
+そのまま実行するため、ゲーム内と同じ結果になります。
 
 Preview and tune RTMBodyMotion.js body motion without launching the game. The previewer runs the module's
-source as is in an emulated RTM 2.4.x (1.12.2) environment, so what you see matches the game (verified frame
-by frame against Nashorn).
+source as is in an emulated RTM 2.4.x (1.12.2) environment, so what you see matches the game.
 
 
 二、開啟方式

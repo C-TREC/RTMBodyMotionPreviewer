@@ -74,7 +74,7 @@ export const STRINGS = {
   emulation: ["模擬環境：RTM 2.4.x（1.12.2）介面；與遊戲內相同的載入順序與 20 tick/s 更新", "模擬環境：RTM 2.4.x（1.12.2）インターフェース、ゲーム内と同じ読込順と20 tick/s更新", "Emulation: RTM 2.4.x (1.12.2) interfaces, same load order and 20 tick/s update as in game"],
   screenshot: ["截圖", "スクリーンショット", "Screenshot"],
   about: ["關於", "情報", "About"],
-  aboutText: ["本工具直接執行 RTMBodyMotion.js 原始碼，結果與遊戲內一致（已與 Nashorn 逐幀比對）。晃動 JS 製作：C-TREC & 月島重工。", "本ツールはRTMBodyMotion.jsの原コードをそのまま実行し、ゲーム内と同じ結果になります（Nashornと全フレーム照合済み）。動揺JS制作：C-TREC & 月島重工。", "This tool runs the RTMBodyMotion.js source as is, so results match the game (verified frame by frame against Nashorn). Body-motion JS by C-TREC & 月島重工."],
+  aboutText: ["本工具直接執行 RTMBodyMotion.js 原始碼，結果與遊戲內一致。晃動 JS 製作：C-TREC & 月島重工。", "本ツールはRTMBodyMotion.jsの原コードをそのまま実行し、ゲーム内と同じ結果になります。動揺JS制作：C-TREC & 月島重工。", "This tool runs the RTMBodyMotion.js source as is, so results match the game. Body-motion JS by C-TREC & 月島重工."],
   dragHint: ["拖曳旋轉、滾輪縮放、右鍵平移", "ドラッグで回転・ホイールで拡大縮小・右ドラッグで移動", "Drag to orbit, wheel to zoom, right-drag to pan"],
   chartClick: ["點圖表可跳到該時間", "グラフをクリックでその時刻へ", "Click a chart to seek"],
   time: ["時間", "時間", "Time"],

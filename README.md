@@ -13,7 +13,7 @@ RTMBodyMotion 晃動預覽器 / 動揺プレビューア / Body-motion previewer
 
 ## 中文
 
-不用進遊戲，就能預覽 [RTMBodyMotion](https://github.com/C-TREC/RTMBodyMotion) 的車體晃動並調校參數。預覽器直接執行原封不動的 `RTMBodyMotion.js`，以 RTM 2.4.24（Minecraft 1.12.2）的介面模擬遊戲環境，載入順序與 20 tick/s 更新都和遊戲相同；已與遊戲的腳本引擎 Nashorn 逐格比對，結果一致。
+不用進遊戲，就能預覽 [RTMBodyMotion](https://github.com/C-TREC/RTMBodyMotion) 的車體晃動並調校參數。預覽器直接執行原封不動的 `RTMBodyMotion.js`，以 RTM 2.4.24（Minecraft 1.12.2）的介面模擬遊戲環境，載入順序與 20 tick/s 更新都和遊戲相同。
 
 - 情境：直線（DataMap 倍率）、彎道／S 彎、道岔（直進／分歧）、制動停車（B1～EB）、乘客上下車
 - 調校：模組全部參數與中日英說明；可讀入描畫腳本的 `MOTION_TUNING`，調好後匯出貼回
@@ -42,7 +42,7 @@ node test/compare_nashorn.mjs <cache> <name>   # 與 Nashorn 的輸出逐格比�
 
 ## 日本語
 
-ゲームを起動せずに、[RTMBodyMotion](https://github.com/C-TREC/RTMBodyMotion) の車体動揺をプレビューしてパラメータを調整できます。`RTMBodyMotion.js` の原コードをそのまま実行し、RTM 2.4.24（Minecraft 1.12.2）のインターフェースでゲーム環境を再現します。読込順と20 tick/sの更新もゲームと同じで、ゲームのスクリプトエンジンNashornと全フレーム照合して一致を確認済みです。
+ゲームを起動せずに、[RTMBodyMotion](https://github.com/C-TREC/RTMBodyMotion) の車体動揺をプレビューしてパラメータを調整できます。`RTMBodyMotion.js` の原コードをそのまま実行し、RTM 2.4.24（Minecraft 1.12.2）のインターフェースでゲーム環境を再現します。読込順と20 tick/sの更新もゲームと同じです。
 
 - シナリオ：直線（DataMap倍率）、曲線／S字、分岐器（直進／分岐）、制動・停車（B1～EB）、乗客の乗降
 - 調整：モジュールの全パラメータと中日英の説明。描画スクリプトの `MOTION_TUNING` を読み込み、調整後に書き出して貼り戻せます
@@ -71,7 +71,7 @@ node test/compare_nashorn.mjs <cache> <name>   # Nashornの出力と全フレー
 
 ## English
 
-Preview and tune [RTMBodyMotion](https://github.com/C-TREC/RTMBodyMotion) body motion without launching the game. The previewer runs the `RTMBodyMotion.js` source as is in an emulated RTM 2.4.24 (Minecraft 1.12.2) environment, with the same load order and 20 tick/s update as the game, and has been verified frame by frame against the game's script engine, Nashorn.
+Preview and tune [RTMBodyMotion](https://github.com/C-TREC/RTMBodyMotion) body motion without launching the game. The previewer runs the `RTMBodyMotion.js` source as is in an emulated RTM 2.4.24 (Minecraft 1.12.2) environment, with the same load order and 20 tick/s update as the game.
 
 - Scenarios: straight track (DataMap scale), curve / S-curve, turnout (straight / diverging), braking and stop (B1 to EB), passengers boarding and alighting
 - Tuning: every module parameter with Chinese / Japanese / English descriptions; load `MOTION_TUNING` from a render script and export it back when done
