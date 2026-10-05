@@ -1,0 +1,34 @@
+RTMBodyMotion 晃動預覽器 v1.0 — 授權條款
+RTMBodyMotion 動揺プレビューア v1.0 — ライセンス
+RTMBodyMotion Previewer v1.0 — License
+
+製作 / 制作 / Made by：C-TREC & 月島重工
+
+----------------------------------------------------------------------
+【中文】
+1. 本工具（原始碼與執行檔）可自由使用、修改與再發布。
+2. 使用條件：再發布本工具或其修改版時，須標明「原作：C-TREC & 月島重工」。
+3. 隨附的 RTMBodyMotion.js 與 RTMBodyMotionAdapter.js 依其自身條款（ライセンス_License.txt）：
+   使用該模組的列車須在 readme 標明「使用了 C-TREC & 月島重工 製作的晃動 JS」。
+4. 本工具按現狀提供，製作者不對使用結果負擔任何保證或責任。
+
+----------------------------------------------------------------------
+【日本語】
+1. 本ツール（ソースコードと実行ファイル）は、自由に使用・改変・再配布できます。
+2. 使用条件：本ツールまたは改変版を再配布する場合は「原作：C-TREC & 月島重工」と明記してください。
+3. 同梱のRTMBodyMotion.jsとRTMBodyMotionAdapter.jsはそれ自身の条件（ライセンス_License.txt）に従います：
+   同モジュールを使用する車両はreadmeに「C-TREC & 月島重工 制作の動揺JSを使用」と明記してください。
+4. 本ツールは現状のまま提供され、制作者は使用結果について一切の保証・責任を負いません。
+
+----------------------------------------------------------------------
+【English】
+1. This tool (source code and executables) may be freely used, modified and redistributed.
+2. Condition: when redistributing this tool or a modified version, credit "Original by C-TREC & 月島重工".
+3. The bundled RTMBodyMotion.js and RTMBodyMotionAdapter.js follow their own terms (ライセンス_License.txt):
+   any vehicle using that module must state in its readme that it uses the body-motion JS made by C-TREC & 月島重工.
+4. This tool is provided as is, without any warranty; the makers accept no liability for its use.
+
+----------------------------------------------------------------------
+第三方元件 / サードパーティ / Third-party components
+  Electron — MIT License（執行檔隨附 LICENSE、LICENSES.chromium.html）
+  three.js — MIT License（app/vendor/three_LICENSE.txt）

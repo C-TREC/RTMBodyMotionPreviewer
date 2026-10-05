@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' app:; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; worker-src 'self'; connect-src 'self' data: blob:">
+<title>RTMBodyMotion Previewer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <div class="brand"><span class="logo">◆</span><span id="title" data-i18n="appTitle"></span><span class="ver" id="ver"></span></div>
+  <div class="top-right">
+    <button id="btnShot" class="ghost" data-i18n="screenshot"></button>
+    <button id="btnAbout" class="ghost" data-i18n="about"></button>
+    <select id="lang"><option value="0">繁體中文</option><option value="1">日本語</option><option value="2">English</option></select>
+  </div>
+</header>
+<main>
+  <aside id="side">
+    <nav id="tabs">
+      <button data-tab="scenario" class="active" data-i18n="tabScenario"></button>
+      <button data-tab="tuning" data-i18n="tabTuning"></button>
+      <button data-tab="vehicle" data-i18n="tabVehicle"></button>
+      <button data-tab="scripts" data-i18n="tabScripts"></button>
+    </nav>
+    <section id="tab-scenario" class="tab active">
+      <div id="scenarioList" class="cards"></div>
+      <p id="scenarioDesc" class="muted"></p>
+      <div id="scenarioParams" class="params"></div>
+    </section>
+    <section id="tab-tuning" class="tab">
+      <div class="row wrap">
+        <button id="btnLoadTuning" data-i18n="loadTuning"></button>
+      </div>
+      <div class="row wrap">
+        <button id="btnExportChanged" class="accent" data-i18n="exportChanged"></button>
+        <button id="btnExportAll" data-i18n="exportAll"></button>
+        <button id="btnResetAll" class="ghost" data-i18n="resetAll"></button>
+      </div>
+      <div class="row wrap">
+        <input id="tuneSearch" type="search">
+        <label class="chk"><input type="checkbox" id="tuneChanged"><span data-i18n="changedOnly"></span></label>
+        <label class="chk"><input type="checkbox" id="tuneAdvanced"><span data-i18n="showAdvanced"></span></label>
+      </div>
+      <div id="tuneInfo" class="muted small"></div>
+      <div id="tuneTree"></div>
+    </section>
+    <section id="tab-vehicle" class="tab">
+      <div id="vehicleParams" class="params"></div>
+      <div class="row wrap">
+        <button id="btnLoadModel" class="accent" data-i18n="loadModel"></button>
+        <button id="btnBoxCar" class="ghost" data-i18n="useBoxCar"></button>
+      </div>
+      <p class="muted small" data-i18n="loadModelNote"></p>
+      <div id="modelInfo" class="small"></div>
+      <h4 id="objHeader" data-i18n="modelObjects" hidden></h4>
+      <div id="objList" class="objlist"></div>
+    </section>
+    <section id="tab-scripts" class="tab">
+      <p class="muted small" data-i18n="scriptsNote"></p>
+      <div id="scriptInfo" class="kv"></div>
+      <div class="row wrap">
+        <button id="btnLoadScripts" class="accent" data-i18n="loadScripts"></button>
+        <button id="btnBundled" class="ghost" data-i18n="useBundled"></button>
+      </div>
+      <p class="muted small" data-i18n="emulation"></p>
+      <h4 data-i18n="log"></h4>
+      <pre id="simLog"></pre>
+    </section>
+  </aside>
+  <div id="center">
+    <div id="viewport">
+      <canvas id="view"></canvas>
+      <div id="hud"></div>
+      <div id="camBar">
+        <div class="seg" id="camModes"></div>
+        <select id="followCar"></select>
+      </div>
+      <div id="status"></div>
+      <div id="hint" class="muted small" data-i18n="dragHint"></div>
+    </div>
+    <div id="playbar">
+      <button id="btnRestart" class="icon" title="">⏮</button>
+      <button id="btnPlay" class="icon play">▶</button>
+      <input id="timeline" type="range" min="0" max="1000" value="0">
+      <span id="timeText" class="mono">0.00 / 0.00 s</span>
+      <label class="lbl"><span data-i18n="playSpeed"></span>
+        <select id="playSpeed"><option value="2">2×</option><option value="1" selected>1×</option><option value="0.5">0.5×</option><option value="0.25">0.25×</option><option value="0.1">0.1×</option></select></label>
+      <label class="chk"><input type="checkbox" id="loop" checked><span data-i18n="loop"></span></label>
+      <label class="lbl" id="exLabel"><span data-i18n="exaggerate"></span>
+        <select id="exaggerate"><option value="1" selected>1×</option><option value="2">2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
+      <button id="btnRef" class="ghost" data-i18n="keepRef"></button>
+    </div>
+    <div id="chartsWrap"><canvas id="charts"></canvas><div id="chartHint" class="muted small"></div></div>
+  </div>
+</main>
+<div id="modal" hidden>
+  <div class="dialog">
+    <div class="dialog-head"><span id="modalTitle"></span><button id="modalClose" class="icon">✕</button></div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<div id="toast"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
