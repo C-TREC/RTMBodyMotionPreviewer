@@ -1,7 +1,9 @@
 # RTMBodyMotion Previewer v1.0
 
 ![Windows](https://img.shields.io/badge/Windows-x64-0078d4) ![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon%20%2F%20Intel-555555) ![Linux](https://img.shields.io/badge/Linux-x64-e0712b) ![RTMBodyMotion](https://img.shields.io/badge/RTMBodyMotion-v1.0-007ec6)<br>
-![Minecraft](https://img.shields.io/badge/Minecraft-1.12.2-44cc11) ![Forge](https://img.shields.io/badge/Forge-1.12.2--14.23.5.2855-e0712b) ![RealTrainMod](https://img.shields.io/badge/RealTrainMod-2.4.24-007ec6)
+![Minecraft](https://img.shields.io/badge/Minecraft-1.12.2-44cc11) ![Forge](https://img.shields.io/badge/Forge-1.12.2--14.23.5.2855-e0712b) ![RealTrainMod](https://img.shields.io/badge/RealTrainMod-2.4.24-007ec6)<br>
+![Minecraft](https://img.shields.io/badge/Minecraft-1.7.10-44cc11) ![Forge](https://img.shields.io/badge/Forge-1.7.10-e0712b) ![RealTrainMod](https://img.shields.io/badge/RealTrainMod-KaizPatchX-007ec6)<br>
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-44cc11) ![Loader](https://img.shields.io/badge/NeoForge%20%2F%20Fabric-1.21.1-e0712b) ![RTMU](https://img.shields.io/badge/RTMU-1.0.19-007ec6)
 
 RTMBodyMotion 晃動預覽器 / 動揺プレビューア / Body-motion previewer
 
