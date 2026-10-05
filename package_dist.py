@@ -22,10 +22,11 @@ VERSION = re.search(r'"version"\s*:\s*"([^"]+)"', pkg).group(1)
 EVER = re.search(r'"electron"\s*:\s*"\^?([^"]+)"', pkg).group(1)
 README = os.path.join(HERE, "README_預覽器說明.txt")
 LICENSE = os.path.join(HERE, "ライセンス_License.txt")
+TOOL_LICENSE = os.path.join(HERE, "LICENSE.txt")
 
 
 def extras():
-    return [(README, os.path.basename(README)), (LICENSE, os.path.basename(LICENSE))]
+    return [(README, os.path.basename(README)), (TOOL_LICENSE, "LICENSE.txt"), (LICENSE, os.path.basename(LICENSE))]
 
 
 def zip_dir(src, out, root):
